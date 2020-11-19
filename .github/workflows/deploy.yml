@@ -34,8 +34,8 @@ jobs:
             git pull
             php73 /usr/local/bin/composer.phar install --optimize-autoloader --no-dev
             npm i
-            npm run prod
-            php73 artisan migrate --force
+#            npm run prod
+#            php73 artisan migrate --force
             php73 artisan cache:clear
             php73 artisan config:cache
             php73 artisan route:cache

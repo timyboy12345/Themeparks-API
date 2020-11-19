@@ -21,7 +21,7 @@ jobs:
           touch database/database.sqlite
       - name: Generate key
         run: php artisan key:generate
-      - name: Generate JS and CSS files
-        run: npm run prod
+#      - name: Generate JS and CSS files
+#        run: npm run prod
       - name: Execute tests (Unit and Feature tests) via PHPUnit
         run: vendor/bin/phpunit
