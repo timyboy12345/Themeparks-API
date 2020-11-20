@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="007afeea-7d0a-4b31-81d9-41557138d13e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/BellewaerdeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ParcAsterixController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data/bellewaerde_pois.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/PhantasialandController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PhantasialandController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/EftelingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/EftelingController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
@@ -187,7 +183,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605802528747</updated>
       <workItem from="1605802530480" duration="5197000" />
-      <workItem from="1605873777776" duration="3811000" />
+      <workItem from="1605873777776" duration="5158000" />
     </task>
     <servers />
   </component>
@@ -242,10 +238,10 @@
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="418" y="176" width="604" height="522" key="find.popup/0.23.1440.804/-248.-1057.1920.1057@0.23.1440.804" timestamp="1605819292560" />
-    <state x="385" y="151" width="670" height="676" key="search.everywhere.popup" timestamp="1605883083221">
+    <state x="385" y="151" width="670" height="676" key="search.everywhere.popup" timestamp="1605884154633">
       <screen x="0" y="23" width="1440" height="803" />
     </state>
-    <state x="385" y="151" width="670" height="676" key="search.everywhere.popup/0.23.1440.803@0.23.1440.803" timestamp="1605883083221" />
+    <state x="385" y="151" width="670" height="676" key="search.everywhere.popup/0.23.1440.803@0.23.1440.803" timestamp="1605884154633" />
     <state x="385" y="151" width="670" height="676" key="search.everywhere.popup/0.23.1440.804/-248.-1057.1920.1057@0.23.1440.804" timestamp="1605819717117" />
   </component>
 </project>

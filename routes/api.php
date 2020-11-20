@@ -33,7 +33,7 @@ Route::prefix('phantasialand')->group(function () {
 });
 
 Route::prefix('efteling')->group(function () {
-//    Route::get('openingtimes', [EftelingController::class, 'openingTimes']);
+    Route::get('openingtimes', [EftelingController::class, 'openingTimes']);
     Route::get('waittimes', [EftelingController::class, 'waitTimes']);
     Route::get('pois', [EftelingController::class, 'pois']);
 });
