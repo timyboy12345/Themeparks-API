@@ -28,7 +28,7 @@ jobs:
       - uses: fifsky/ssh-action@master
         with:
           command: |
-            cd /volume1/laravel_sites/gamequest
+            cd /volume1/laravel_sites/themeparks-api
             php73 artisan down
             git reset --hard
             git pull
