@@ -30,7 +30,7 @@ class PhantasialandController extends Controller
         $lat = rand($latMin, $latMax);
         $lng = rand($lngMin, $lngMax);
 
-        $response = Http::get("https://api.phlsys.de/api/signage-snapshots?loc=${lat},${lng}&compact=true&access_token=8cbWt6gu8aEG2VLvDVS9G2dj5rjjnrBuExxbLHQEEoG6zgS0BYqy8eFyaKcZ8ZCH");
+        $response = Http::get("https://api.phlsys.de/api/signage-snapshots?loc=${latMax},${lngMax}&compact=true&access_token=8cbWt6gu8aEG2VLvDVS9G2dj5rjjnrBuExxbLHQEEoG6zgS0BYqy8eFyaKcZ8ZCH");
 
         return response($response, $response->status())
             ->header('Content-Type', 'application/json');

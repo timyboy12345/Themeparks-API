@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\Api\BellewaerdeController;
 use App\Http\Controllers\Api\EftelingController;
+use App\Http\Controllers\Api\ParcAsterixController;
 use App\Http\Controllers\Api\PhantasialandController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
@@ -40,4 +42,16 @@ Route::prefix('phantasialand')->group(function () {
     Route::get('openingtimes', [PhantasialandController::class, 'openingTimes']);
     Route::get('waittimes', [PhantasialandController::class, 'waitTimes']);
     Route::get('pois', [PhantasialandController::class, 'pois']);
+});
+
+Route::prefix('parcasterix')->group(function () {
+    Route::get('openingtimes', [ParcAsterixController::class, 'openingTimes']);
+    Route::get('waittimes', [ParcAsterixController::class, 'waitTimes']);
+    Route::get('pois', [ParcAsterixController::class, 'pois']);
+});
+
+Route::prefix('bellewaerde')->group(function () {
+    Route::get('openingtimes', [BellewaerdeController::class, 'openingTimes']);
+    Route::get('waittimes', [BellewaerdeController::class, 'waitTimes']);
+    Route::get('pois', [BellewaerdeController::class, 'pois']);
 });
