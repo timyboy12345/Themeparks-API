@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+//    \Illuminate\Support\Facades\Session::put('test', 'Test');
+//    \Illuminate\Support\Facades\Auth::login(\App\Models\User::all()->first());
     return view('welcome');
+})->name('home');
+
+Route::middleware('guest')->group(function () {
+    Route::get('login', [LoginController::class, 'login'])->name('login');
+    Route::post('login', [LoginController::class, 'loginPost']);
 });
