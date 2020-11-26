@@ -4,6 +4,7 @@ use App\Http\Controllers\Api\BellewaerdeController;
 use App\Http\Controllers\Api\EftelingController;
 use App\Http\Controllers\Api\ParcAsterixController;
 use App\Http\Controllers\Api\PhantasialandController;
+use App\Http\Controllers\Api\PortaventuraController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
@@ -54,4 +55,10 @@ Route::prefix('bellewaerde')->group(function () {
     Route::get('openingtimes', [BellewaerdeController::class, 'openingTimes']);
     Route::get('waittimes', [BellewaerdeController::class, 'waitTimes']);
     Route::get('pois', [BellewaerdeController::class, 'pois']);
+});
+
+Route::prefix('portaventura')->group(function () {
+    Route::get('openingtimes', [PortaventuraController::class, 'openingTimes']);
+    Route::get('waittimes', [PortaventuraController::class, 'waitTimes']);
+    Route::get('pois', [PortaventuraController::class, 'pois']);
 });
