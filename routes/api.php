@@ -60,5 +60,6 @@ Route::prefix('bellewaerde')->group(function () {
 Route::prefix('portaventura')->group(function () {
     Route::get('openingtimes', [PortaventuraController::class, 'openingTimes']);
     Route::get('waittimes', [PortaventuraController::class, 'waitTimes']);
-    Route::get('pois', [PortaventuraController::class, 'pois']);
+    Route::get('attractions', [PortaventuraController::class, 'attractions']);
+    Route::get('restaurants', [PortaventuraController::class, 'restaurants']);
 });

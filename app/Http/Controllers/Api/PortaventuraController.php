@@ -8,10 +8,17 @@ use Illuminate\Support\Facades\Http;
 
 class PortaventuraController extends Controller
 {
-
-    public function pois(Request $request)
+    public function attractions(Request $request)
     {
         $response = Http::get('https://app.portaventuraworld.com/ws/filters/portaventura/atraccion/en');
+
+        return response($response, 200)
+            ->header('Content-Type', 'application/json');
+    }
+
+    public function restaurants(Request $request)
+    {
+        $response = Http::get('https://app.portaventuraworld.com/ws/filters/portaventura/restaurante/en');
 
         return response($response, 200)
             ->header('Content-Type', 'application/json');
